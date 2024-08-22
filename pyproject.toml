@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grbl_cnc"
+version = "0.2.0"
+
+description = "A Python package that provides control of Grbl CNCs"
+readme = "readme.md"
+requires-python = ">=3.10"
+
+dependencies = [
+  "pyserial>=3.5"
+]
+
+[project.urls]
+repository = "https://github.com/TablewareBox/grbl_cnc"
+
+[tool.setuptools.packages.find]
+include = ["grbl_cnc"]
